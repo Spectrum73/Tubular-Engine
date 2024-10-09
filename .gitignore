@@ -9,6 +9,7 @@
 
 **/Build_VS16
 **/Build
+**/Debug
 
 *.vcxproj.user
 *.opendb
