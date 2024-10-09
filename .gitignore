@@ -1,0 +1,14 @@
+# .gitignore sampled from: https://github.com/microsoft/DirectX-Graphics-Samples/blob/master/.gitignore
+
+**/bin/x64
+**/obj/x64
+**/src/packages
+**/src/bin
+**/src/obj
+**/.vs
+
+**/Build_VS16
+**/Build
+
+*.vcxproj.user
+*.opendb
