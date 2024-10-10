@@ -16,11 +16,11 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Source\PCH">
-      <UniqueIdentifier>{5510aa74-8d8c-4c7a-bb38-807f8fe74bec}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Resources\Icons">
       <UniqueIdentifier>{d12da756-4178-4298-9a16-d5753655039a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\pch">
+      <UniqueIdentifier>{5510aa74-8d8c-4c7a-bb38-807f8fe74bec}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -28,12 +28,12 @@
       <Filter>Source\Private</Filter>
     </ClCompile>
     <ClCompile Include="Source\pch.cpp">
-      <Filter>Source\PCH</Filter>
+      <Filter>Source\pch</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\pch.h">
-      <Filter>Source\PCH</Filter>
+      <Filter>Source\pch</Filter>
     </ClInclude>
     <ClInclude Include="resource.h">
       <Filter>Resources</Filter>
