@@ -7,3 +7,7 @@
 
 #define MAX_NAME_STRING 256
 #define HInstance() GetModuleHandle(NULL)
+
+#include "Engine.h"
+
+#include "Common/Logger.h"

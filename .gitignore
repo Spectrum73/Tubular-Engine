@@ -7,9 +7,8 @@
 **/src/obj
 **/.vs
 
-**/Build_VS16
-**/Build
-**/Debug
+**/Intermediate
+**/bin
 
 *.vcxproj.user
 *.opendb

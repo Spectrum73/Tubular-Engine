@@ -19,15 +19,54 @@
     <Filter Include="Source\pch">
       <UniqueIdentifier>{d705cde3-ed3e-4dba-8b8e-2522f1ec6f43}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source\Private\Platform">
+      <UniqueIdentifier>{0d794de2-4f0d-49af-9169-0f2017470117}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Private\Platform\WIN32">
+      <UniqueIdentifier>{74a58b67-fd99-4c38-8bf1-3c0defdf305e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Public\Platform">
+      <UniqueIdentifier>{2af3cdd1-52cd-47d2-b449-183c7af3c004}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Public\Platform\WIN32">
+      <UniqueIdentifier>{f303db1e-2a32-40a4-97b9-034143d64f00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Private\Common">
+      <UniqueIdentifier>{6456a8a0-93dc-482c-8d26-9e6388d4ffa2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Public\Common">
+      <UniqueIdentifier>{806c3812-f366-4f73-b429-d22e17d8ea3b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\Engine.cpp">
       <Filter>Source\pch</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Platform\WIN32\IApplication.cpp">
+      <Filter>Source\Private\Platform\WIN32</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Common\Logger.cpp">
+      <Filter>Source\Private\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Common\Time.cpp">
+      <Filter>Source\Private\Common</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Engine.h">
       <Filter>Source\pch</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Platform\WIN32\IApplication.h">
+      <Filter>Source\Public\Platform\WIN32</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Platform\WIN32\WinEntry.h">
+      <Filter>Source\Public\Platform\WIN32</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Common\Logger.h">
+      <Filter>Source\Public\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Common\Time.h">
+      <Filter>Source\Public\Common</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
