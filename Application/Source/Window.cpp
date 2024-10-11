@@ -53,7 +53,7 @@ VOID Window::CreateWindowClass()
 */
 INT Window::InitialiseWindow()
 {
-	HWND hWnd = CreateWindow(WindowClass, WindowTitle, WS_OVERLAPPEDWINDOW,
+	hWnd = CreateWindow(WindowClass, WindowTitle, WS_OVERLAPPEDWINDOW,
 		CW_USEDEFAULT, 0, WindowWidth, WindowHeight, nullptr, nullptr, HInstance(), nullptr);
 
 	if (!hWnd)
@@ -78,6 +78,11 @@ INT Window::Initialise()
 		return windowError;
 
 	return 0;
+}
+
+HWND Window::GetHWND() 
+{
+	return hWnd;
 }
 
 Window::Window()

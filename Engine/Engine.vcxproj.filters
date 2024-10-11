@@ -8,34 +8,29 @@
     <Filter Include="Source">
       <UniqueIdentifier>{53488a1c-cc9e-49d9-87dc-69a0445baa7e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source\Private">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="Source\Public">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
     <Filter Include="Source\pch">
       <UniqueIdentifier>{d705cde3-ed3e-4dba-8b8e-2522f1ec6f43}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source\Private\Platform">
-      <UniqueIdentifier>{0d794de2-4f0d-49af-9169-0f2017470117}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\Private\Platform\WIN32">
-      <UniqueIdentifier>{74a58b67-fd99-4c38-8bf1-3c0defdf305e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\Public\Platform">
-      <UniqueIdentifier>{2af3cdd1-52cd-47d2-b449-183c7af3c004}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\Public\Platform\WIN32">
-      <UniqueIdentifier>{f303db1e-2a32-40a4-97b9-034143d64f00}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\Private\Common">
+    <Filter Include="Source\Common">
       <UniqueIdentifier>{6456a8a0-93dc-482c-8d26-9e6388d4ffa2}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source\Public\Common">
-      <UniqueIdentifier>{806c3812-f366-4f73-b429-d22e17d8ea3b}</UniqueIdentifier>
+    <Filter Include="Source\RenderAPI">
+      <UniqueIdentifier>{9fd7f766-3e53-4614-93af-2edf4af56db1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\RenderAPI\DirectX12">
+      <UniqueIdentifier>{2cfdc2d3-9c49-4f1f-90c4-2e4b67584af5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\RenderAPI\DirectX12\DXGI">
+      <UniqueIdentifier>{6ccc608c-780d-4c7d-b41f-3c51c8dd242b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Platform">
+      <UniqueIdentifier>{0d794de2-4f0d-49af-9169-0f2017470117}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Platform\WIN32">
+      <UniqueIdentifier>{74a58b67-fd99-4c38-8bf1-3c0defdf305e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\RenderAPI\DirectX12\Base">
+      <UniqueIdentifier>{f76ed1e7-60fa-4723-83d3-bf662544eeb7}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -43,30 +38,57 @@
       <Filter>Source\pch</Filter>
     </ClCompile>
     <ClCompile Include="Source\Platform\WIN32\IApplication.cpp">
-      <Filter>Source\Private\Platform\WIN32</Filter>
+      <Filter>Source\Platform\WIN32</Filter>
     </ClCompile>
     <ClCompile Include="Source\Common\Logger.cpp">
-      <Filter>Source\Private\Common</Filter>
+      <Filter>Source\Common</Filter>
     </ClCompile>
     <ClCompile Include="Source\Common\Time.cpp">
-      <Filter>Source\Private\Common</Filter>
+      <Filter>Source\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\RenderAPI\RenderAPI.cpp">
+      <Filter>Source\RenderAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\RenderAPI\DirectX12\DXGI\DXGIFactory.cpp">
+      <Filter>Source\RenderAPI\DirectX12\DXGI</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\RenderAPI\DirectX12\DXGI\DXGIAdapter.cpp">
+      <Filter>Source\RenderAPI\DirectX12\DXGI</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\RenderAPI\DirectX12\Base\D12Device.cpp">
+      <Filter>Source\RenderAPI\DirectX12\Base</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Engine.h">
       <Filter>Source\pch</Filter>
     </ClInclude>
-    <ClInclude Include="Source\Platform\WIN32\IApplication.h">
-      <Filter>Source\Public\Platform\WIN32</Filter>
-    </ClInclude>
-    <ClInclude Include="Source\Platform\WIN32\WinEntry.h">
-      <Filter>Source\Public\Platform\WIN32</Filter>
-    </ClInclude>
     <ClInclude Include="Source\Common\Logger.h">
-      <Filter>Source\Public\Common</Filter>
+      <Filter>Source\Common</Filter>
     </ClInclude>
     <ClInclude Include="Source\Common\Time.h">
-      <Filter>Source\Public\Common</Filter>
+      <Filter>Source\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Platform\WIN32\IApplication.h">
+      <Filter>Source\Platform\WIN32</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Platform\WIN32\WinEntry.h">
+      <Filter>Source\Platform\WIN32</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\RenderAPI\RenderAPI.h">
+      <Filter>Source\RenderAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\RenderAPI\DirectX12\DXGI\DXGIFactory.h">
+      <Filter>Source\RenderAPI\DirectX12\DXGI</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Common\Helper.h">
+      <Filter>Source\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\RenderAPI\DirectX12\DXGI\DXGIAdapter.h">
+      <Filter>Source\RenderAPI\DirectX12\DXGI</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\RenderAPI\DirectX12\Base\D12Device.h">
+      <Filter>Source\RenderAPI\DirectX12\Base</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

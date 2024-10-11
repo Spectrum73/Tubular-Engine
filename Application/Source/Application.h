@@ -1,11 +1,11 @@
 #pragma once
 #include "Platform/WIN32/IApplication.h"
-#include "Window.h"
 
 class Application : public IApplication
 {
 private:
 	Window applicationWindow;
+	RenderAPI renderer;
 public:
 	Application();
 	~Application();

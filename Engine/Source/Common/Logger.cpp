@@ -35,6 +35,13 @@ VOID Logger::PrintLog(const std::wstring& fmt)
 #endif
 }
 
+VOID Logger::PrintLog(const std::string fmt) 
+{
+#ifdef _DEBUG
+	OutputDebugStringA(fmt.c_str());
+#endif
+}
+
 VOID Logger::PrintDebugSeparator()
 {
 #ifdef _DEBUG

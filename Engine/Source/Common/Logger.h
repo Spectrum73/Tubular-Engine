@@ -15,5 +15,6 @@ public:
 
 	static VOID PrintLog(const WCHAR* fmt, ...);
 	static VOID PrintLog(const std::wstring& fmt);
+	static VOID PrintLog(const std::string fmt);
 	static VOID PrintDebugSeparator();
 };

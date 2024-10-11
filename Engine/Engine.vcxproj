@@ -92,15 +92,30 @@
   <ItemGroup>
     <ClCompile Include="Source\Common\Logger.cpp" />
     <ClCompile Include="Source\Common\Time.cpp" />
-    <ClCompile Include="Source\Engine.cpp" />
+    <ClCompile Include="Source\Engine.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="Source\Platform\WIN32\IApplication.cpp" />
+    <ClCompile Include="Source\RenderAPI\DirectX12\Base\D12Device.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\RenderAPI\DirectX12\DXGI\DXGIAdapter.cpp" />
+    <ClCompile Include="Source\RenderAPI\DirectX12\DXGI\DXGIFactory.cpp" />
+    <ClCompile Include="Source\RenderAPI\RenderAPI.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Source\Common\Helper.h" />
     <ClInclude Include="Source\Common\Logger.h" />
     <ClInclude Include="Source\Common\Time.h" />
     <ClInclude Include="Source\Engine.h" />
     <ClInclude Include="Source\Platform\WIN32\IApplication.h" />
     <ClInclude Include="Source\Platform\WIN32\WinEntry.h" />
+    <ClInclude Include="Source\RenderAPI\DirectX12\Base\D12Device.h" />
+    <ClInclude Include="Source\RenderAPI\DirectX12\DXGI\DXGIAdapter.h" />
+    <ClInclude Include="Source\RenderAPI\DirectX12\DXGI\DXGIFactory.h" />
+    <ClInclude Include="Source\RenderAPI\RenderAPI.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

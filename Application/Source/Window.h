@@ -4,6 +4,8 @@
 
 class Window
 {
+
+private:
 	WCHAR		WindowClass[MAX_NAME_STRING];
 	WCHAR		WindowTitle[MAX_NAME_STRING];
 
@@ -12,12 +14,14 @@ class Window
 
 	HICON		hIcon;
 
-private:
+	HWND		hWnd;
+
 	VOID InitialiseVariables();
 	VOID CreateWindowClass();
 	INT InitialiseWindow();
 public:
 	INT Initialise();
+	HWND GetHWND();
 public:
 	Window();
 	~Window();
